@@ -1,0 +1,6 @@
+14- Indique si en Python existen o no variables de tipo valor y su contraparte tipo
+referencia como sucede en otros lenguajes como Java.
+
+Rta: En python no existe una distincion tan clara como java sobre las variables de tipo valor y tipo referencia.
+python no termina de marcar una diferencia y puede comportarse como una variable de valor o una variable de referencia ya que todas las variables son referencias a objetos
+Las variables en python pueden diferenciarse mayormente como variables mutables (Similares a variables de valor) e inmutables (Similares a variables de referencia).
