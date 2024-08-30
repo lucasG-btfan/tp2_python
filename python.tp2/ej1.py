@@ -1,0 +1,7 @@
+num_str= str (input ("ingrese un numero decimal: "))
+print(num_str)
+num_float= float(num_str)
+print("El numero en decimal es: ",num_float)
+numEnt = int(num_float) 
+print ("El numero en entero es: ",numEnt)
+print("La cantidad de digitos son: ",len(num_str)-1)
