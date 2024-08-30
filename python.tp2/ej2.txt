@@ -1,0 +1,4 @@
+2- Si se asigna un valor a una variable fuera de rango (mayor de lo establecido) ¿Qué
+ocurre? ¿Existe alguna forma de resolverlo? Ejemplifique. 
+
+Rta: Los rangos de variables son pertenecientes a Java, python no tiene como resolverlo.
