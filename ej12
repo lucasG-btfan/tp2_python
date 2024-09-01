@@ -1,7 +1,1 @@
-cadena = "hipopotamo"
-nueva_cadena = ""
-for i in range(0, 10):  
-    if i != 3 and i != 4:
-        nueva_cadena = nueva_cadena + cadena[i]
-        
-print(nueva_cadena)
+
