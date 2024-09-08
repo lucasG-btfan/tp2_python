@@ -1,6 +1,6 @@
 cadena = "hipopotamo"
 nueva_cadena = ""
-for i in range(0, 10):  
+for i in range(0, len(cadena)):  
     if i != 3 and i != 4:
         nueva_cadena = nueva_cadena + cadena[i]
         
