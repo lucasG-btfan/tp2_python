@@ -1,4 +1,7 @@
 2- Si se asigna un valor a una variable fuera de rango (mayor de lo establecido) ¿Qué
 ocurre? ¿Existe alguna forma de resolverlo? Ejemplifique. 
 
-Rta: Los rangos de variables son pertenecientes a Java, python no tiene como resolverlo.
+Rta: Los rangos de variables son pertenecientes a Java, python no tiene como resolverlo. Python no posee una restricción con respecto a estos aspectos. Sin embargo, por ejemplo, al introducir el siguiente numero en un comando float, el programa emitirá un tipo de "error": 
+Entrada: 52345235235234523523453453453453455555555555555555555555555555555557777777777777777777777777
+777777777777777777777777
+Salida: 5.234523523523452e+115
