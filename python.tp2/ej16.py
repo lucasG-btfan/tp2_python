@@ -1,3 +1,5 @@
+#16- Codifique un método que reciba como parámetro una cadena y determine si la misma contiene o no números.
+
 def contiene_numeros(cadena, numeros):
     for i in range(0, len(cadena)):
         if cadena[i].isdigit() == True:
