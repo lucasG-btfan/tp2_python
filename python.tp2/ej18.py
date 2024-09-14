@@ -1,4 +1,6 @@
-
+"""18- En la clase FuncionesPrograma codifique una método getFechaDate estática
+que reciba como parámetro 3 valores enteros, día, mes, anio y retorne la fecha
+de tipo date correspondiente."""
 def doubleCheck(x, y, z):
     # Validar el año
     if z <= 0:
