@@ -39,7 +39,7 @@ class FuncionesPrograma:
           
         
      def getFechaDate(diaa,mees,añoo):
-         print(f"El dia es {diaa}/{mees}/{añoo}")
+         print(f"El dia es {dia}/{mes}/{año}")
 
      
   
