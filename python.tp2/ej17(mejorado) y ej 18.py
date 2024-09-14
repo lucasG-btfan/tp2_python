@@ -38,7 +38,7 @@ class FuncionesPrograma:
           print (f"Fecha: {palabradia} de {sacarmes(mes)} de {palabraaño}")
           
         
-     def getFechaDate(diaa,mees,añoo):
+     def getFechaDate(dia,mes,año):
          print(f"El dia es {dia}/{mes}/{año}")
 
      
