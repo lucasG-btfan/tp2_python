@@ -1,15 +1,3 @@
-"""20- Cree una clase Fracción con dos atributos, numerador y denominador.
-Agregue a la clase los siguientes 4 métodos e implemente los mismos:
-sumarFracciones(Fraccion f1, Fraccion f2)
-restarFracciones(Fraccion f1, Fraccion f2)
-multiplicarFracciones(Fraccion f1, Fraccion f2)
-dividirFracciones(Fraccion f1, Fraccion f2)
-Todos los métodos deben retornar la fracción resultante de la operación.
-Cree una clase OperacionesFraccion que contenga un método main donde se solicite
-al usuario el ingreso de 4 valores numéricos enteros con los cuales se crearan 
-2 objetos Fracción y finalizada la creación de los mismos se ejecutaran los 4 
-métodos implementados anteriormente asignando el resultado a una nueva variable
-de tipo Fracción y mostrando por pantalla el resultado de las operaciones realizadas."""
 
 # Función para asegurarse de que el valor no sea 0
 def NumN(x):
@@ -43,40 +31,59 @@ def div_fracc(a, b, c, d):
     num2 = b * c
     print(f"{num1}/{num2}")
 
-# Ingresamos valores para el numerador y el denominador de la primera fracción
-numerador1 = int(input("Ingrese el primer numerador: "))
-numerador1 = NumN(numerador1)
-denominador1 = int(input("Ingrese el primer denominador: "))
-denominador1 = NumN(denominador1)
-fraccion1 = f"{numerador1}/{denominador1}"
-print("La primera fracción es:", fraccion1)
+class operacionesFraccion:
+    def __init__(self, numerador1, denominador1, numerador2, denominador2, fraccion1, fraccion2, OperacionesFraccion):
+        self.numerador1 = numerador1
+        self.denominador1 = denominador1
+        self.numerador2 = numerador2
+        self.denominador2 = denominador2
+        self.fraccion1 = fraccion1
+        self.fraccion2 = fraccion2
+        self.OperacionesFraccion = OperacionesFraccion
 
-# Ingresamos valores para el numerador y el denominador de la segunda fracción
-numerador2 = int(input("Ingrese el segundo numerador: "))
-numerador2 = NumN(numerador2)
-denominador2 = int(input("Ingrese el segundo denominador: "))
-denominador2 = NumN(denominador2)
-fraccion2 = f"{numerador2}/{denominador2}"
-print("La segunda fracción es:", fraccion2)
+    # Realizamos un switch case para elegir la operación aritmética
+    def switch_case(self):
+        match self.OperacionesFraccion:
+            case 1:
+                print(f"{self.fraccion1} + {self.fraccion2} = ", end="")
+                suma_d_fracc(self.numerador1, self.denominador1, self.numerador2, self.denominador2)
+            case 2:
+                print(f"{self.fraccion1} - {self.fraccion2} = ", end="")
+                restar_fracc(self.numerador1, self.denominador1, self.numerador2, self.denominador2)
+            case 3:
+                print(f"{self.fraccion1} * {self.fraccion2} = ", end="")
+                mult_fracc(self.numerador1, self.denominador1, self.numerador2, self.denominador2)
+            case 4:
+                print(f"{self.fraccion1} / {self.fraccion2} = ", end="")
+                div_fracc(self.numerador1, self.denominador1, self.numerador2, self.denominador2)
+            case _:
+                print("Por favor, ingrese un número correcto, hubo un error")
 
-# Solicitamos al usuario que ingrese la operación que desea realizar
-OperacionesFraccion = int(input("Ingrese un número por la operación que desea realizar: +(1); -(2); *(3); /(4): "))
+def main():
+    # Ingresamos valores para el numerador y el denominador de la primera fracción
+    numerador1 = int(input("Ingrese el primer numerador: "))
+    numerador1 = NumN(numerador1)
+    denominador1 = int(input("Ingrese el primer denominador: "))
+    denominador1 = NumN(denominador1)
+    fraccion1 = f"{numerador1}/{denominador1}"
+    print("La primera fracción es:", fraccion1)
 
-# Realizamos un switch case para elegir la operación aritmética
-def switch_case(OperacionesFraccion):
-    match OperacionesFraccion:
-        case 1:
-            print(f"{fraccion1} + {fraccion2} = ", end="")
-            suma_d_fracc(numerador1, denominador1, numerador2, denominador2)
-        case 2:
-            print(f"{fraccion1} - {fraccion2} = ", end="")
-            restar_fracc(numerador1, denominador1, numerador2, denominador2)
-        case 3:
-            print(f"{fraccion1} * {fraccion2} = ", end="")
-            mult_fracc(numerador1, denominador1, numerador2, denominador2)
-        case 4:
-            print(f"{fraccion1} / {fraccion2} = ", end="")
-            div_fracc(numerador1, denominador1, numerador2, denominador2)
-        case _:
-            print("Por favor, ingrese un número correcto, hubo un error")
-switch_case(OperacionesFraccion)
+    # Ingresamos valores para el numerador y el denominador de la segunda fracción
+    numerador2 = int(input("Ingrese el segundo numerador: "))
+    numerador2 = NumN(numerador2)
+    denominador2 = int(input("Ingrese el segundo denominador: "))
+    denominador2 = NumN(denominador2)
+    fraccion2 = f"{numerador2}/{denominador2}"
+    print("La segunda fracción es:", fraccion2)
+
+    # Solicitamos al usuario que ingrese la operación que desea realizar
+    OperacionesFraccion = int(input("Ingrese un número por la operación que desea realizar: +(1); -(2); *(3); /(4): "))
+
+    # Creamos una instancia de operacionesFraccion y llamamos a switch_case
+    operacion = operacionesFraccion(numerador1, denominador1, numerador2, denominador2, fraccion1, fraccion2, OperacionesFraccion)
+    operacion.switch_case()
+
+# Llamamos a main
+if __name__ == "__main__":
+    main()
+
