@@ -1,3 +1,8 @@
+"""22- Suma los dígitos de un número ingresado por el usuario de forma recursiva.
+Ejemplo: el usuario ingresa 1596
+El programa debe sumar 1 + 5 + 9 + 6"""
+
+
 def sumaDigitos(n):
     if n == 0:
         return 0

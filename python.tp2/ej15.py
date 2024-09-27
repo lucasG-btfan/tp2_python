@@ -1,3 +1,7 @@
+"""15- Indique que sucede si realizo la siguiente declaración de variable:
+x = None print(x)
+Explique y ejemplifique el uso de None"""
+
 # Utilizo "None" por si una función retorna un valor que no tiene importancia
 
 def buscar_numero(lista, numero_usuario):

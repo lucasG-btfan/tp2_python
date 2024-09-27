@@ -1,6 +1,6 @@
 # Pedir 2 palabras y preguntar si son iguales
 
-text = input("Ingresa la primera palaba: ")
+text = input("Ingresa la primera palabra: ")
 
 text2 = input("Ahora ingresa una segunda palabra: ")
 

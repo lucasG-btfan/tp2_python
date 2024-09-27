@@ -1,3 +1,16 @@
+"""20- Cree una clase Fracción con dos atributos, numerador y denominador.
+Agregue a la clase los siguientes 4 métodos e implemente los mismos:
+sumarFracciones(Fraccion f1, Fraccion f2)
+restarFracciones(Fraccion f1, Fraccion f2)
+multiplicarFracciones(Fraccion f1, Fraccion f2)
+dividirFracciones(Fraccion f1, Fraccion f2)
+Todos los métodos deben retornar la fracción resultante de la operación.
+Cree una clase OperacionesFraccion que contenga un método main donde se solicite
+al usuario el ingreso de 4 valores numéricos enteros con los cuales se crearan 
+2 objetos Fracción y finalizada la creación de los mismos se ejecutaran los 4 
+métodos implementados anteriormente asignando el resultado a una nueva variable
+de tipo Fracción y mostrando por pantalla el resultado de las operaciones realizadas."""
+
 # Función para asegurarse de que el valor no sea 0
 def NumN(x):
     if x != 0:

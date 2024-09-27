@@ -2,3 +2,10 @@
 ocurre? ¿Existe alguna forma de resolverlo? Ejemplifique. 
 
 Rta: Los rangos de variables son pertenecientes a Java, python no tiene como resolverlo.
+Python no posee una restricción con respecto a estos aspectos.Si asignas un valor que es 
+mayor que el rango de un entero en otros lenguajes, en Python simplemente lo convierte a 
+un tipo de dato más grande como un 'long'. Sin embargo, por ejemplo,
+al introducir el siguiente numero en un comando float, el programa emitirá un tipo de "error": 
+Entrada: 52345235235234523523453453453453455555555555555555555555555555555557777777777777777777777777
+777777777777777777777777
+Salida: 5.234523523523452e+115

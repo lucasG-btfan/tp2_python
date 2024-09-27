@@ -1,3 +1,5 @@
+"""10- Convertir una cadena a mayúsculas o minúsculas, daremos opción a que el usuario pida que se desea
+hacer (convertir a mayúsculas o convertir a minúsculas) y mostrar el resultado por pantalla."""
 
 text = input("Escribe una palabra... ")
 
