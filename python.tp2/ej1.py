@@ -1,7 +1,20 @@
-num_str= str (input ("ingrese un numero decimal: "))
-print(num_str)
-num_float= float(num_str)
-print("El numero en decimal es: ",num_float)
-numEnt = int(num_float) 
-print ("El numero en entero es: ",numEnt)
-print("La cantidad de digitos son: ",len(num_str)-1)
+valorDecimal= input ("ingrese un numero decimal: ")
+numstr = str(valorDecimal)
+print(numstr)
+
+# SHORT (No existe el tipo de datos Short en python)
+
+# INT
+numEnt = int(valorDecimal) 
+print ("El numero en entero es:",numEnt)
+
+# LONG (No existe el tipo de datos Long en python)
+
+# FLOAT
+num_float= float(valorDecimal)
+print("El numero en decimal es:",num_float)
+
+
+
+
+print("La cantidad de digitos son:",len(valorDecimal))

@@ -1,7 +1,9 @@
 from num2words import num2words
-dia=int(input("diga un dia: "))
-mes=int(input("diga un mes: "))
-año=int(input("diga un año: "))
+fechaCompleta = input('Ingresa un a fecha con el formato xx/xx/xxxx ')
+fechaSeparada = fechaCompleta.split('/')
+dia = int(fechaSeparada[0])
+mes = int(fechaSeparada[1])
+año = int(fechaSeparada[2])
 
 class FuncionesPrograma:
      @staticmethod
@@ -35,10 +37,12 @@ class FuncionesPrograma:
               case 12:
                    ames="Diciembre"  
              return ames
+          print("ej 17")
           print (f"Fecha: {palabradia} de {sacarmes(mes)} de {palabraaño}")
           
         
      def getFechaDate(diaa,mees,añoo):
+         print('ej 18')
          print(f"El dia es {diaa}/{mees}/{añoo}")
 
      

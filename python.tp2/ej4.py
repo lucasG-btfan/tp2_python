@@ -10,7 +10,7 @@ while num >= 1:
     if num % billetes[i] != num:
         contador += num // billetes[i]
         num = num % billetes[i]
-        print("Cantidad de billetes de " + str(billetes[i]), str(int(contador)))
+        print("Cantidad de billetes de " + str(billetes[i]),"x" + str(int(contador)))
     contador = 0
     i += 1
 
@@ -23,3 +23,4 @@ while num > 0 and num < 1:
     contador = 0
     i += 1
 
+# Porque no distingue entre 0.5 y 0.05
